@@ -29,14 +29,24 @@ body{
     border-radius: 10%;
     object-fit: cover;
     border: 10px solid var(--main-color);
+    margin-right: 100px;
+}
+#anhdaidien:hover {
+    box-shadow: 
+        0 0 10px var(--main-color),
+        0 0 20px var(--main-color),
+        0 0 40px var(--main-color),
+        0 0 80px var(--main-color);
+    animation: glow 1.5s infinite alternate;
 }
 section
 {   
-    margin-right: 16rem;
+    
     min-height: 100vh;
-    padding: 3rem 10% 3rem;
+    padding: 4rem 5% 4rem;
     display: flex;
-    margin-right: 50px;
+    justify-content: center; /* căn ngang */
+    align-items: center;
 }
 .header{
     position: fixed;
@@ -77,36 +87,37 @@ section
     align-items: center;
     margin-right: 30px;
 }
-.home-img{
-    width: 25vb;
-    margin-right: 12rem;
-}
+
 .home-content{
     font-size: 1rem;
     font-weight: 700;
-
+    gap: 1.2rem;
+    max-width: 1000px; /* Giới hạn chiều rộng tối đa */
+    margin-left: 170px;
 }
 .home-content h3{
     font-size: 2rem;
     font-weight: 500;
     color: var(--text-color);
-    margin: 0 30px 0 0;
+    margin: 0 250px 0 0;
+    max-width: 100%;
+    white-space: nowrap;
 }
 .home-content h1{
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--main-color);
-    margin: 0 30px 0 0;
+    margin: 0 250px 0 0;
 }
 .home-content span{
     color: var(--main-color);
     font-weight: 700;
-    margin: 0 30px 0 0;
+    display: inline;
 }
 .home-content p{
     text-align: justify;
     margin: 2rem 20rem 0 0;
     font-size: 1rem;
-    margin: 0 30px 0 0;
+    margin: 0 250px 0 0;
 }
 .social-media a {
     display: inline-flex;
