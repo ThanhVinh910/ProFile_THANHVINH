@@ -82,14 +82,18 @@ body{
   display: flex;                  /* chữ + ảnh ngang hàng */
   align-items: center;            /* căn giữa theo chiều dọc */
   justify-content: space-between; /* đẩy chữ sang trái, ảnh sang phải */
-  gap: 50px;                      /* khoảng cách giữa chữ và ảnh */
-  padding: 130px;          /* padding xung quanh */
+  gap: 100px;                      /* khoảng cách giữa chữ và ảnh */
+  padding: 190px 120px 0 120px;          /* padding xung quanh */
 }
 
 .skill {
   flex: 1;                        /* chữ chiếm phần còn lại */
   font-size: 20px;
   line-height: 1.6;
+}
+.skill span {
+    color: var(--main-color);
+    font-weight: 600;
 }
 
 #img-link img {
@@ -99,11 +103,18 @@ body{
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,.2);
   transition: transform 0.3s;
-  margin: 0;                      /* ⚠️ bỏ margin-left cũ */
+  margin-left: 30px;                      /* ⚠️ bỏ margin-left cũ */
+  text-align: center;          /* căn giữa ảnh */
 }
 
 #img-link img:hover {
   transform: scale(1.05);
+}
+#img-link p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--main-color);
 }
 
 
