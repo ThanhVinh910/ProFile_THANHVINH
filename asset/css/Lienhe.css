@@ -82,12 +82,19 @@ body {
     0 0 40px var(--main-color), 0 0 80px var(--main-color);
   animation: glow 1.5s infinite alternate;
 }
+.img-frame {
+  display: flex;
+  align-items: center; /* căn giữa theo chiều dọc */
+  margin-top: 0rem;
+  margin-left: 10rem;
+  gap: 15rem; /* khoảng cách giữa ảnh và gmail */
+}
+
 .info {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .info i {
